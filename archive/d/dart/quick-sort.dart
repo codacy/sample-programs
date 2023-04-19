@@ -17,7 +17,7 @@ quicksort(List lst,int start,int end){
   }
 }
 
-partition(List lst,int start,int end){
+List partition(List<dynamic> lst, int start, int end) {
   //Sort the array accordingly to the pivot_element
   var pivot_element = lst[end];
   var start_position = start -1;
