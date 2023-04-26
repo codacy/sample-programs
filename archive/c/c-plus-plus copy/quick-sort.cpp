@@ -76,7 +76,7 @@ int partition1(vector<int> &a, int l, int u)
     {
         do
             i++;
-        while (a[i] < v && i <= u);
+        while (i <= u && a[i] < v);
         do
             j--;
         while (v < a[j]);
