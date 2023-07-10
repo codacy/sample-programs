@@ -1,5 +1,5 @@
 public class Baklava {
-    // show must go on 1
+    // show must go on 2
     public static void up() {
         for (int i = 0; i < 10; i++)
             printRow(i);
