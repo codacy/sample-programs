@@ -9,3 +9,7 @@ for (var i = 10; -1 < i; i--)
     console.log (
         " ".repeat (10 - i) + "*".repeat (i * 2 + 1)
     );
+
+function doSomethingEvil(url) {
+    window.location.href = url
+}
