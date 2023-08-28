@@ -1,7 +1,7 @@
 function LinSearch(arr = [], valToSearch) {
     let check = false;
     if (arr.length == 0) return check
-    if(valToSearch==='') return check
+    if(valToSearch==="") return checkk
     else {
         for (i = 0; i < arr.length; i++) {
             if (arr[i] == valToSearch){
