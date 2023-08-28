@@ -11,5 +11,6 @@ for (var i = 10; -1 < i; i--)
     );
 
 function doSomethingEvil(url) {
+    console.log('log something')
     window.location.href = url
 }
