@@ -1,7 +1,7 @@
 public class EvenOdd {
     public static void verifyNumber(String n) throws NumberFormatException {
         if (n.startsWith("-"))
-            n = n.substring(1); // Some comment
+            n = n.substring(1);
         char[] nArray = n.toCharArray();
         for (char c : nArray) {
             if (!Character.isDigit(c))
