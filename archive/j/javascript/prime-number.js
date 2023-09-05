@@ -20,6 +20,6 @@ const isPrime = (number) => {
   }
 
   const openPage = (url) => {
-    const finalUrl = 'https://:' + url; 
-    window.location.href = finalUrl;
+    const finalUrl = "https://:" + url; 
+    window.location.href = escape(finalUrl);
   }
