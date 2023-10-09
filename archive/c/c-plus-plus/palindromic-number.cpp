@@ -42,11 +42,29 @@ int is_int(char **argv)
     {
         return 1;
     }
-    else
+    else 
     {
         return 0;
     }
 }
+
+
+
+
+
+
+
+
+
+
+    // if (strlen(argv[1]) != j || j == 0)
+    // {
+    //     return 1;
+    // }
+    // else
+    // {
+    //     return 0;
+    // }
 
 int main(int argc, char **argv)
 {

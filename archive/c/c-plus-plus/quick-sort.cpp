@@ -76,9 +76,10 @@ int partition1(vector<int> &a, int l, int u)
     {
         do
             i++;
-        while (a[i] < v && i <= u);
+        while (a[i] < v && i<= u);
         do
             j--;
+        
         while (v < a[j]);
         if (i < j)
         {
@@ -91,6 +92,11 @@ int partition1(vector<int> &a, int l, int u)
     a[j] = v;
     return (j);
 }
+
+
+        // while (a[i] < v && i <= u);
+        // do
+        //     j--;
 
 void quick_sort(vector<int> &a, int l, int u)
 {
