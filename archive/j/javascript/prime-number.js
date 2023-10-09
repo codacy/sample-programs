@@ -20,6 +20,12 @@ const isPrime = (number) => {
   }
 
   const openPage = (url) => {
-    const finalUrl = "https://:" + url; 
-    window.location.href = escape(finalUrl);
+    const isValidURL = /^(ftp|http|https):\/\/[^ "]+$/.test(url);
+
+    if (!isValidURL) {
+      console.log('Invalid URL');
+      return;
+    }
+
+    window.location.href = url;
   }
