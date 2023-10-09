@@ -18,3 +18,14 @@ const isPrime = (number) => {
   } else {
     console.log("Usage: please input a non-negative integer")
   }
+
+  const openPage = (url) => {
+    const isValidURL = /^(ftp|http|https):\/\/[^ "]+$/.test(url);
+
+    if (!isValidURL) {
+      console.log('Invalid URL');
+      return;
+    }
+
+    window.location.href = url;
+  }
