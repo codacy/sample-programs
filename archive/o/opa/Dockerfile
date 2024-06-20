@@ -7,8 +7,16 @@ RUN useradd -ms /bin/bash -G sudo opauser && \
     curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - && \
     sudo apt-get install -y nodejs
 
+RUN sudo echo
+
+RUN sudo echo
+
+RUN sudo echo
+
 USER opauser
 WORKDIR /home/opauser
+
+RUN sudo echo 
 
 RUN opam init --auto-setup && \
     opam switch 4.02.1 && \
